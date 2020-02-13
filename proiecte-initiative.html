@@ -9,6 +9,9 @@
   <meta name="author" content="" />
 
   <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+
   <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet" />
@@ -432,7 +435,7 @@
             <h3 class="title">Am intrebat membrii <strong>"De Ce PLUS?"</strong></h3>
             <div class="blankline30"></div>
 
-            <ul class="bxslider">
+            <ul class="testimonial-2-active">
               <li>
                 <blockquote>
                     "Cred că schimbarea începe cu noi, iar dacă pot să pun o cărămidă cât de mică la această schimbare, am sa o fac cu drag. M-am alăturat acestui proiect încă de la început și am avut o surpriză plăcută să găsesc oameni care sigur vor ajuta la o schimbare în bine.“
@@ -654,8 +657,24 @@
   <script src="js/animate.js"></script>
   <script src="js/inview.js"></script>
 
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $('.testimonial-2-active').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
