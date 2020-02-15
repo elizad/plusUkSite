@@ -1,0 +1,839 @@
+/* =========================== General ================================= */
+.fb-facebook-all-in-one .pull-left {
+	float: left;
+}
+.fb-facebook-all-in-one .cleardiv {
+	clear: both;
+}
+.fb-facebook-all-in-one .loading {
+	width: 100%;
+	text-align: center;
+	padding: 110px 0;
+}
+.fb-facebook-all-in-one .btn {
+	padding: 12px 18px;
+    border-radius: 4px;
+    box-shadow: none;
+	background-color: transparent;
+	border: 1px solid #ff5000;
+	color: #ff5000;
+	letter-spacing: 1.2px;
+}
+.fb-facebook-all-in-one .btn-primary,
+.fb-facebook-all-in-one .btn.active,
+.fb-facebook-all-in-one .btn:hover {
+	background-color: #ff5000;
+	color: #fff;
+}
+.fb-facebook-all-in-one .btn.btn-primary {
+	color: #fff;
+}
+.fb-facebook-all-in-one .btn-primary:hover,
+.fb-facebook-all-in-one .btn.active:hover {
+	opacity: 0.8;
+}
+.fb-facebook-all-in-one .btn i {
+	margin-right: 8px;
+}
+
+.fb-facebook-all-in-one .fb-facebook-tab-bar {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.fb-facebook-all-in-one .fb-facebook-tab-bar .btn {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.fb-facebook-all-in-one .fb-facebook-tab-content .content-tab {
+	display: none;
+}
+.fb-facebook-all-in-one .fb-facebook-tab-content .content-tab.active {
+	display: block;
+}
+.fb-facebook-all-in-one .grid,
+.fb-facebook-all-in-one .grid-item {
+	display: none;
+}
+.fb-facebook-all-in-one .grid-item.active {
+	display: block;
+}
+.fb-facebook-all-in-one .grid-item {
+	width: 32%;
+	margin-bottom: 22px;
+}
+.fb-facebook-all-in-one .gutter-sizer {
+	width: 2%;
+}
+@media (max-width: 991px) {
+	.fb-facebook-all-in-one .grid-item {
+		width: 48%;
+		margin-bottom: 30px;
+	}
+	.fb-facebook-all-in-one .gutter-sizer {
+		width: 4%;
+	}
+}
+@media (max-width: 425px) {
+	.fb-facebook-all-in-one .grid-item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.fb-facebook-all-in-one .gutter-sizer {
+		width: 0;
+	}
+}
+
+/* =========================== Calendar ================================= */
+/* Button */
+.facebook-events-calendar .events-calendar-bar {
+	margin-bottom: 30px;
+}
+.facebook-events-calendar.compact .events-calendar-bar {
+	margin-bottom: 20px;
+}
+.facebook-events-calendar .events-calendar-bar .calendar-view {
+	margin-right: 20px;
+}
+.facebook-events-calendar.compact .events-calendar-bar .calendar-view {
+	margin-right: 15px;
+}
+
+/* Wrap */
+.facebook-events-calendar .facebook-events-calendar-wrap {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* Calendar */
+.facebook-events-calendar .fb-calendar .calendar-table {
+	width: 100%;
+    margin-bottom: 0;
+    border: 1px solid #e9e9e9;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr th,
+.facebook-events-calendar .fb-calendar .calendar-table tr td {
+	width: 14.285714285714285%;
+	border: 1px solid #e9e9e9;
+    padding: 10px;
+    vertical-align: middle;
+}
+.facebook-events-calendar.compact .fb-calendar .calendar-table tr th,
+.facebook-events-calendar.compact .fb-calendar .calendar-table tr.day td {
+	padding: 10px 0;
+}
+.facebook-events-calendar.compact .fb-calendar .calendar-table tr td {
+	padding: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr th {
+	background-color: #ff5000;
+	color: #fff;
+	height: 46px;
+    text-align: center;
+    font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr th a {
+	color: #fff;
+}
+.facebook-events-calendar.compact .fb-calendar .calendar-table tr th.calendar-title {
+	font-size: 10px;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr th a {
+	cursor: pointer;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr th i {
+	margin-right: 8px;
+}
+.facebook-events-calendar .fb-calendar .calendar-table tr.day td {
+	text-align: center;
+	background-color: #eeeeee;
+    color: #ff5000;
+	font-weight: 600;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-day-event {
+    position: relative;
+}
+.facebook-events-calendar.compact .fb-calendar .calendar-table .calendar-day-event {
+    position: static;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-day-normal {
+    height: 60px;
+    text-align: right;
+	vertical-align: top;
+}
+.facebook-events-calendar.compact .fb-calendar .calendar-table .calendar-day-normal {
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-day-weekend {
+    color: #ef4f69;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-day-today {
+	background-color: #d5e9e9;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name {
+	color: #ffffff;
+	background-color: #567BD2;
+	font-size: 11px;
+	margin-top: 5px;
+	text-align: center;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	line-height: 20px;
+	padding: 2px 3px;
+	cursor: pointer;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name span {
+	color: #ffffff;
+	font-size: 11px;
+	line-height: 20px;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.no-name {
+	opacity: 0;
+	visibility: hidden;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.color-1 {
+	background-color: #567BD2;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.color-2 {
+	background-color: #13baff;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.color-3 {
+	background-color: #669933;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.color-4 {
+	background-color: #ff8a23;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.first-day {
+	margin-right: -11px;
+	-moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.middle-day {
+	margin-left: -11px;
+	margin-right: -11px;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.middle-day span {
+	opacity: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.last-day {
+	margin-left: -11px;
+	-moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-name.last-day span {
+	opacity: 0;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-mark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none !important;
+}
+.facebook-events-calendar .fb-calendar .calendar-table .calendar-event-mark::after {
+	content: '';
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid #567BD2;
+    border-left: 16px solid transparent;
+}
+
+/* Events List */
+.facebook-events-calendar .fb-event-list {
+	padding: 20px;
+	background-color: #eeeeee;
+	float: left;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	display: none;
+}
+.facebook-events-calendar .fb-event-list .list-title {
+	font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+	color: #ff5000;
+    margin-bottom: 12px;
+}
+.facebook-events-calendar .fb-event-list.all .list-title.past {
+	margin-top: 20px;
+}
+.facebook-events-calendar .fb-event-list .event-item {
+	float: left;
+    width: 100%;
+    border-top: 1px solid #d1dbe5;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.facebook-events-calendar .fb-event-list .event-item:first-child {
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+}
+.facebook-events-calendar.compact .fb-event-list .event-item {
+	padding-top: 25px;
+}
+.facebook-events-calendar .fb-event-list .event-item-left {
+	width: 20%;
+	margin-right: 2%;
+}
+.facebook-events-calendar .fb-event-list .event-item-right {
+	width: 78%;
+}
+.facebook-events-calendar .fb-event-list .event-image img {
+	width: 100%;
+	border: 1px solid #eee;
+	cursor: pointer;
+}
+.facebook-events-calendar .fb-event-list .event-name {
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: -2px;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
+.facebook-events-calendar .fb-event-list .event-name:hover {
+	color: #ff5000;
+}
+.facebook-events-calendar.compact .fb-event-list .event-name {
+	margin-top: 10px;
+	font-size: 16px;
+}
+.facebook-events-calendar .fb-event-list .event-time,
+.facebook-events-calendar .fb-event-list .event-date {
+	margin-bottom: 3px;
+	color: #ff5000;
+	font-style: italic;
+}
+.facebook-events-calendar .fb-event-list .event-time i,
+.facebook-events-calendar .fb-event-list .event-date i {
+	margin-right: 5px;
+	width: 14px;
+}
+.facebook-events-calendar .fb-event-list .event-desc {
+	margin-top: 5px;
+}
+
+/* Event detail */
+.facebook-events-calendar .fb-event-detail {
+	padding: 20px;
+	background-color: #eeeeee;
+	display: none;
+}
+.facebook-events-calendar .fb-event-detail .event-image {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.facebook-events-calendar .fb-event-detail .event-name {
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.facebook-events-calendar.compact .fb-event-detail .event-name {
+	font-size: 16px;
+}
+.facebook-events-calendar .fb-event-detail .event-time,
+.facebook-events-calendar .fb-event-detail .event-date,
+.facebook-events-calendar .fb-event-detail .event-location {
+	margin-bottom: 3px;
+	color: #ff5000;
+	font-style: italic;
+}
+.facebook-events-calendar .fb-event-detail .event-time i,
+.facebook-events-calendar .fb-event-detail .event-date i,
+.facebook-events-calendar .fb-event-detail .event-location i {
+	margin-right: 5px;
+	width: 14px;
+}
+.facebook-events-calendar .fb-event-detail .event-location i {
+	font-size: 18px;
+}
+.facebook-events-calendar .fb-event-detail .event-desc {
+	border-top: 1px solid #d1dbe5;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+.facebook-events-calendar .fb-event-detail .event-link {
+	margin: 25px 0 30px 0;
+}
+.facebook-events-calendar .fb-event-detail .event-map {
+	margin-top: 30px;
+	border: 1px solid #d1dbe5;
+}
+
+/* Tooltip */
+.facebook-events-calendar .calendar-day-event {
+	position: relative;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip {
+	position: absolute;
+    z-index: 9999;
+    width: 180px;
+    left: 50%;
+	margin: 0 0 0 -100px;
+    bottom: 35px;
+    background-color: #f5f5f5;
+    opacity: 0;
+	border: 1px solid #cccccc;
+	box-shadow: 0 0 5px 2px rgba(145,145,145,.35);
+    border-radius: 6px;
+	pointer-events: none;
+	padding: 10px;
+	text-align: left;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip::before,
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip::after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip::after {
+	border-color: rgba(245, 245, 245, 0);
+	border-top-color: #f5f5f5;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip::before {
+	border-color: rgba(204, 204, 204, 0);
+	border-top-color: #cccccc;
+	border-width: 9px;
+	margin-left: -9px;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-tooltip-item {
+	border-bottom: 1px dotted #666;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-tooltip-item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-time {
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+    background-color: #757575;
+    padding: 0 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    margin-bottom: 5px;
+	line-height: 22px;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-time i {
+	margin-right: 5px;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-name {
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 6px;
+	color: #5AA4A3;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-image  img {
+	width: 100%;
+	margin-bottom: 6px;
+	border: 1px solid #EEE;
+}
+.facebook-events-calendar .calendar-day-event .fb-event-tooltip .event-desc {
+	font-size: 14px;
+}
+
+
+/* =========================== Feed ================================= */
+.fb-facebook-feed .facebook-post-item {
+	background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+}
+.fb-facebook-feed .facebook-post-item .author {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.fb-facebook-feed .facebook-post-item .author .image img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    overflow: hidden;
+	margin-right: 10px;
+}
+.fb-facebook-feed .facebook-post-item .author .name {
+	line-height: 1.4;
+	font-weight: 600;
+}
+.fb-facebook-feed .facebook-post-item .author .time {
+	font-size: 12px;
+	color: #616770;
+}
+.fb-facebook-feed .facebook-post-item .content {
+	margin-bottom: 15px;
+}
+.fb-facebook-feed .facebook-post-item .image {
+	margin-bottom: 10px;
+	position: relative;
+}
+.fb-facebook-feed .facebook-post-item .image img {
+	width: 100%;
+}
+.fb-facebook-feed .facebook-post-item .image .video-play {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(../images/play.png) no-repeat center center;
+    background-size: 40px;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item {
+	margin-right: 12px;
+	color: #aba9a9;
+	font-size: 13px;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item:last-child {
+	margin-right: 0;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img {
+	width: 18px;
+	margin-right: -6px;
+	position: relative;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img:last-child {
+	margin-right: 1px;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.like {
+	z-index: 6;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.love {
+	z-index: 5;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.haha {
+	z-index: 4;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.wow {
+	z-index: 3;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.sad {
+	z-index: 2;
+}
+.fb-facebook-feed .facebook-post-item .bottom-bar .item img.angry {
+	z-index: 1;
+}
+.fb-facebook-feed .facebook-post-item .go-facebook {
+	margin-left: 8px;
+}
+.fb-facebook-feed .facebook-photo-item .image img {
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+}
+.fb-facebook-feed .facebook-albums {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+.fb-facebook-feed .facebook-album-item {
+	text-align: center;
+	width: 25%;
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+	.fb-facebook-feed .facebook-album-item {
+		width: 33.33%;
+	}
+}
+@media (max-width: 576px) {
+	.fb-facebook-feed .facebook-album-item {
+		width: 50%;
+	}
+}
+@media (max-width: 425px) {
+	.fb-facebook-feed .facebook-album-item {
+		width: 100%;
+	}
+}
+.fb-facebook-feed .facebook-album-item .album-image-wrap {
+    position: relative;
+    z-index: 1;
+	margin-bottom: 16px;
+}
+.fb-facebook-feed .facebook-album-item .album-image-wrap:before,
+.fb-facebook-feed .facebook-album-item .album-image-wrap:after {
+	content: "";
+    position: absolute;
+	border: 1px solid #dddfe6;
+    width: 100%;
+    height: 100%;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    background-color: #fff;
+	border-radius: 2px;
+}
+.fb-facebook-feed .facebook-album-item .album-image-wrap:after {
+	bottom: -10px;
+    right: -10px;
+    z-index: -2;
+}
+.fb-facebook-feed .facebook-album-item .album-image {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #dddfe6;
+	width: 100%;
+	height: 100%;
+}
+.fb-facebook-feed .facebook-album-item .album-image img {
+	width: 100%;
+}
+.fb-facebook-feed .facebook-album-item .album-name {
+	font-size: 15px;
+    color: #333333;
+}
+.fb-facebook-feed .facebook-album-item .album-count {
+	font-size: 13px;
+	color: #90949c;
+}
+.fb-facebook-feed .facebook-video-item .video {
+    position: relative;
+}
+.fb-facebook-feed .facebook-video-item .video video {
+    width: 100%;
+	border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+}
+.fb-facebook-feed .facebook-video-item .video .video-play {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(../images/play.png) no-repeat center center;
+    background-size: 40px;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.fb-facebook-feed .facebook-video-item .video .video-length {
+	position: absolute;
+    right: 15px;
+    bottom: 20px;
+	background: rgba(0, 0, 0, .4);
+    border-radius: 2px;
+    padding: 2px 6px;
+	color: #fff;
+	font-size: 12px;
+}
+.fb-facebook-feed .facebook-video-item .title {
+	margin-top: 5px;
+	font-size: 15px;
+    color: #333333;
+}
+.fb-facebook-feed .facebook-video-item .time {
+	font-size: 13px;
+    color: #90949c;
+}
+.fb-facebook-feed .album-photos {
+	display: none;
+}
+.fb-facebook-feed .read-more {
+	text-align: center;
+	margin-top: 20px;
+}
+.fb-facebook-feed-popup {
+    position: relative;
+    width: 900px;
+	height: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 0 22px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 22px 0 rgba(0,0,0,0.2);
+}
+.fb-facebook-feed-popup .popup-container {
+	background-color: #fff;
+	width: 900px;
+}
+.fb-facebook-feed-popup .popup-left {
+	width: 60%;
+	padding: 30px;
+	height: 100%;
+    min-height: 500px;
+	background-color: #000;
+	position: relative;
+}
+.fb-facebook-feed-popup .popup-right {
+	width: 40%;
+	height: 100%;
+    min-height: 500px;
+	position: relative;
+}
+.fb-facebook-feed-popup .popup-right .fb-facebook-feed .facebook-post-item {
+	box-shadow: none;
+}
+.fb-facebook-feed-popup .popup-right .fb-facebook-feed .facebook-post-item .bottom-bar {
+	position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+}
+.fb-facebook-feed-popup .popup-right .fb-facebook-feed .facebook-post-item .bottom-bar .item img {
+	margin-top: -2px;
+}
+.fb-facebook-feed-popup .popup-left img,
+.fb-facebook-feed-popup .popup-left video {
+	max-width: 90%;
+	height: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fb-facebook-feed-popup button.mfp-close {
+	position: fixed;
+	width: 32px;
+    height: 32px;
+    line-height: 32px;
+	right: 10px;
+    top: 10px;
+    opacity: 1;
+	color: #fff;
+	font-size: 32px;
+}
+
+
+/* =========================== Likebox ================================= */
+.fb-facebook-likebox {
+	overflow: hidden;
+	z-index: 999999;
+	position: fixed;
+	top: 50%;
+	margin-top: -78px;
+}
+.fb-facebook-likebox .likebox-button {
+    background: url(../images/likebox_button.png) no-repeat scroll transparent;
+    height: 155px;
+    width: 48px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.fb-facebook-likebox .likebox-button.left {
+	background: url(../images/likebox_button_left.png) no-repeat scroll transparent;
+}
+.fb-facebook-likebox .likebox-content {
+    padding: 0;
+    border: 2px solid #3B5998;
+    background: #fff;
+    box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+}
+.likebox-content .fb-page {
+	display: none;
+}
+.fb-facebook-popup {
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+}
+.fb-facebook-popup .popup-wrap {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fb-facebook-popup .popup-wrap:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.fb-facebook-popup .popup-wrap .likebox-content {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+	z-index: 9999;
+	border: 10px solid #fff;
+    background: #fff;
+	vertical-align: middle;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.fb-facebook-popup .popup-wrap .likebox-content .close {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	background: #999999;
+	width: 22px;
+    height: 22px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	z-index: 9999;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}

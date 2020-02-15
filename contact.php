@@ -113,15 +113,6 @@
     <div class="container">
         <div class="row">
             <div class="span8">
-
-                <!--
-                <div id="sendmessage">Mesajul dvs. a fost trimis. Multumim!</div>
-
-                <div id="errormessage"></div>
-                 -->
-
-
-
                 <?php
 
 
@@ -183,17 +174,17 @@
 
                         $mail->isSMTP();
                         /* SMTP server address. */
-                        $mail->Host = 'smtp.example.com';
+                        $mail->Host = '51.83.76.62';
                         /* Use SMTP authentication. */
-                        $mail->SMTPAuth = TRUE;
+                        $mail->SMTPAuth = FALSE;
                         /* Set the encryption system. */
-                        $mail->SMTPSecure = 'tls';
-                        /* SMTP authentication username. */
-                        $mail->Username = 'smtp@example.com';
-                        /* SMTP authentication password. */
-                        $mail->Password = 'thepassword';
+//                        $mail->SMTPSecure = 'tls';
+//                        /* SMTP authentication username. */
+//                        $mail->Username = 'contact_ddcontractors';
+//                        /* SMTP authentication password. */
+//                        $mail->Password = 'w<$oA93K';
                         /* Set the SMTP port. */
-                        $mail->Port = 587;
+                        $mail->Port = 13784;
 
                         $mail->CharSet = PHPMailer::CHARSET_UTF8;
                         //It's important not to use the submitter's address as the from address as it's forgery,
