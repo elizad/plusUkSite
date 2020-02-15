@@ -155,10 +155,10 @@
                     //Validate to address
                     //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
                     //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
-                    if (array_key_exists('to', $_POST) && in_array($_POST['to'], ['elizadascal', 'elizadascal', 'elizadascal'], true)) {
+                    if (array_key_exists('to', $_POST) && in_array($_POST['to'], [ 'elizadascal'], true)) {
                         $to = $_POST['to'] . '@gmail.com';
                     } else {
-                        $to = 'elizadascal@gmail.com';
+                        $to = 'diaspora1@ro.plus';
                     }
                     //Make sure the address they provided is valid before trying to use it
                     if (array_key_exists('email', $_POST) && PHPMailer::validateAddress($_POST['email'])) {
@@ -173,24 +173,16 @@
                         $mail = new PHPMailer;
 
                         $mail->isSMTP();
-                        /* SMTP server address. */
-                        $mail->Host = '51.83.76.62';
-                        /* Use SMTP authentication. */
-                        $mail->SMTPAuth = FALSE;
-                        /* Set the encryption system. */
-//                        $mail->SMTPSecure = 'tls';
-//                        /* SMTP authentication username. */
-//                        $mail->Username = 'contact_ddcontractors';
-//                        /* SMTP authentication password. */
-//                        $mail->Password = 'w<$oA93K';
-                        /* Set the SMTP port. */
-                        $mail->Port = 13784;
+                        $mail->Host = 'localhost';
+                        $mail->SMTPAuth = false;
+                        $mail->SMTPAutoTLS = false;
+                        $mail->Port = 25;
 
                         $mail->CharSet = PHPMailer::CHARSET_UTF8;
                         //It's important not to use the submitter's address as the from address as it's forgery,
                         //which will cause your messages to fail SPF checks.
                         //Use an address in your own domain as the from address, put the submitter's address in a reply-to
-                        $mail->setFrom('hello@redphoenixsoftware.co.uk', (empty($name) ? 'Contact form' : $name));
+                        $mail->setFrom('contact@regatulunit.plus', (empty($name) ? 'Contact form' : $name));
                         $mail->addAddress($to);
                         $mail->addReplyTo($email, $name);
                         $mail->Subject = 'Contact form: ' . $subject;
@@ -210,21 +202,7 @@
 
                 <h1>Contact us</h1>
                 <?php if (empty($msg)) { ?>
-<!--                    <form method="post">-->
-<!--                    <label for="to">Trimite la :</label>-->
-<!--                    <select name="to" id="to">-->
-<!--                        <option value="sales">Sales</option>-->
-<!--                        <option value="support" selected="selected">Support</option>-->
-<!--                        <option value="accounts">Accounts</option>-->
-<!--                    </select><br>-->
-<!--                    -->
-<!--                        <label for="subject">Subiect: <input type="text" name="subject" id="subject" maxlength="255"></label><br>-->
-<!--                        <label for="name">Nume: <input type="text" name="name" id="name" maxlength="255"></label><br>-->
-<!--                        <label for="email">Email: <input type="email" name="email" id="email" maxlength="255"></label><br>-->
-<!--                        <label for="query">Mesaj:</label><br>-->
-<!--                        <textarea cols="30" rows="8" name="query" id="query" placeholder="Your question"></textarea><br>-->
-<!--                        <input type="submit" value="Submit">-->
-<!--                    </form>-->
+
 
 
                     <form action="" class="contactForm" method="post" role="form">
@@ -232,9 +210,8 @@
                             <div class="span8">
                                 <label for="to">Trimite la :</label>
                                 <select name="to" id="to">
-                                    <option value="sales">Sales</option>
-                                    <option value="support" selected="selected">Support</option>
-                                    <option value="accounts">Accounts</option>
+                                    <option value="support" selected="selected">PLUS uk</option>
+
                                 </select>
                             </div>
                         </div>
